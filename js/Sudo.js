@@ -144,8 +144,8 @@ var nebulas = require("nebulas"),
 	Account = nebulas.Account,
 	neb = new nebulas.Neb();
 // 设置使用的网络
-// neb.setRequest(new nebulas.HttpRequest("https://mainnet.nebulas.io"));
-neb.setRequest(new nebulas.HttpRequest("https://testnet.nebulas.io"));
+neb.setRequest(new nebulas.HttpRequest("https://mainnet.nebulas.io"));
+// neb.setRequest(new nebulas.HttpRequest("https://testnet.nebulas.io"));
 
 // NebPay SDK 为不同平台的交易提供了统一的支付接口
 // 开发者在Dapp页面中使用NebPay API可以通过浏览器插件钱包、手机app钱包等实现交易支付和合约调用。
@@ -154,7 +154,8 @@ var nebPay = new NebPay();
 // ------------------钱包功能------------------------
 
 // ------------------dapp合约地址---------------------------
-var dappAddress = "n1gHmkSU2rnawqcPHWZ98VdtRXpdiHLwQsc";
+var dappAddress = "n1r8y4ngg9TqaQQwyw2Kmu9JtYucbaYqtBV";
+//f55b1a9621c7d17bbdb77c7dc831c1e0227e3843ed711ac96c8a519e737a03ee
 
 
 
