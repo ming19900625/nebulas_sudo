@@ -35,7 +35,7 @@
 	#mainArea{ width:900px; height:600px;background: #ffffff ;border:1px rgb(255, 255, 255) solid; position:relative; margin:0 auto;}
 		#mainArea #gameBoard{ width:450px; height:450px; top:140px; left:380px;/*margin:15px 50px auto 40px; float:right;*/ position:absolute;}
 		#mainArea #selectBoard{ width:98px; height:98px; top:0px; left:0px; position:absolute; background:#FFF; display:none; z-index:99;}
-	#control{width:250px;height:auto;float:left;margin-top:70px;margin-left:25px;}
+	#control{width:250px;height:auto;float:left;margin-top:70px;margin-left:15px;}
 	#btn{width:200px;margin-top:20px;margin-left:20px;}
 	#stager{font-size:26px;margin-top:30px;width:250px; text-align:center;}
 	#timer{font-size:26px;margin-top:30px;width:250px; text-align:center;}

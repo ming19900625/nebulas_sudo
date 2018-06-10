@@ -551,7 +551,7 @@ jQuery(function ($) {
 
 	if (url.indexOf("?id=") != -1) {
 		var str = url.substr(4);
-		alert(str);
+		// alert(str);
 		getMap(parseInt(str));
 		sudoku.readdata = true;
 	}
