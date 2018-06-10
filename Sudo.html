@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>sudoku</title>
+<link rel="stylesheet" type="text/css" href="css/sudoku.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css" />
+
+
+<script type="text/javascript" src="js/nebPay.js"></script>
+<script type="text/javascript" src="js/nebulas.js"></script>
+
+<script type="text/javascript" src="js/clipboard.min.js"></script>
+
+<script type="text/javascript" src="js/jQuery.js"></script>
+<script type="text/javascript" src="js/jQuery.dropdown.js"></script>
+<script type="text/javascript" src="js/Sudo.js"></script>
+
+</head>
+<body class="center boxShadow">
+<div id="mainArea">
+    <div id="header" class="center">
+      <h1 class="textShadow font color">数 独 游 戏</h1>
+      <p>数独是一种数字游戏，在左边的9×9方格中，填入1-9这九个数字，规则是：每一行，每一列，每个小的九宫格中，1-9只能出现一次！
+      </p>
+    </div>
+    <div id="control">
+      <div id="levelSelect">
+        <select id="cd-dropdown" name="cd-dropdown" class="cd-select">
+          <option value="-1" selected>难度选择</option>
+          <option value="1" class="icon-monkey">初级</option>
+          <option value="2" class="icon-bear">中级</option>
+          <option value="3" class="icon-squirrel">高级</option>
+          <option value="4" class="icon-elephant">骨灰级</option>
+        </select>
+      </div>
+      <div id="levelTips" class="textShadow">难度：<span id="level">初级</span></div>
+      <div id="friendtimer" class="textShadow">好友用时:<span id="friendtime">00:00:00</span></div>
+      
+      <div id="timer" class="textShadow">已用时：<span id="time">00:00:00</span></div>
+      
+      <div id="btn">
+        <input id="btnStartNew" type="button" value="开始新游戏" class="button white" name="startNew"/>
+        <input id="btnStart" type="button" value="开始游戏" class="button white" name="start"/>
+        <input id="btnUpload" type="button" value="邀请好友来战" class="button white" name="upload"/>
+        <!-- <input type="button" value="显示答案" class="button white" name="showAnswer"/> -->
+        <!-- <input type="button" value="重置局面" class="button white" name="reset"/> -->
+      </div>
+      <div id="showmsg" class="textShadow"></div>
+    </div>
+    <div id="gameBoard" class="font color"></div>
+    <div id="selectBoard" class="radius textShadow font color block boxShadow"></div>
+    
+</div>
+<footer class="footer">
+    <div class="container" style="margin-top:25px;margin-bottom:25px">
+        <div class="row">
+            <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+                <ul class="list-inline mb-2">
+                    <li class="list-inline-item ">
+                        <a href="https://github.com/ChengOrangeJu/WebExtensionWallet" target="view_window"> 安装chrome钱包插件</a>
+                    </li>
+                    <li class="list-inline-item">⋅</li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/nebulasio/wiki/blob/master/tutorials.md" target="view_window">nebulas wiki</a>
+                    </li>
+                    <li class="list-inline-item">⋅</li>
+                    <li class="list-inline-item">
+                        <a href="https://incentive.nebulas.io/cn/signup.html?invite=AjEUR" target="view_window"> 提交Dapp获取100NAS奖励</a>
+                    </li>
+
+                </ul>
+                <p class="text-muted small mb-4 mb-lg-0">Powered by nebulas.io</p>
+            </div>
+            <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+                <a href="https://nebulas.io" target="view_window"> <img src="image/nebulas.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
